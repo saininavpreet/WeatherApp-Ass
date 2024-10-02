@@ -15,7 +15,7 @@ const SearchResult = ({ weatherDetails }) => {
     const ampm = hr > 12 ? "PM" : "AM";
     const hours = hr > 12 ? hr - 12 : hr;
     const minutes = data.getMinutes();
-    return ${hours}:${minutes < 10 ? '0' : ''}${minutes} ${ampm};
+    return `${hours}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
   }
   const sunrise = time(sys.sunrise);
   const sunset = time(sys.sunset);
